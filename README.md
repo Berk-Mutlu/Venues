@@ -3,7 +3,8 @@
 
 Venue API, konum tabanlı mekan keşfi, kullanıcı etkileşimi (yorumlar) ve güvenli kimlik doğrulama işlemleri için tasarlanmış modern bir backend çözümüdür. Bu servis sayesinde geliştiriciler, uygulamalarına hızlıca mekan listeleme, sosyal geri bildirim ve kullanıcı yönetim özellikleri entegre edebilirler.
 
-🔗 **Site Linki :** [https://web-s7ma.vercel.app/](https://web-s7ma.vercel.app/)
+🔗 **Fronted Linki :** [https://web-s7ma.vercel.app/](https://web-s7ma.vercel.app/)
+🔗 **Backend Linki :** [https://web-gamma-orpin-77.vercel.app/](https://web-gamma-orpin-77.vercel.app/)
 
 ## Kurulum 
 
