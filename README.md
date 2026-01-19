@@ -55,10 +55,5 @@ npm run dev
 ```
 Uygulama `localhost:5173` adresinde çalışacaktır.
 
-## 📸 Ekran Görüntüleri
-*(Mevcut `tests` klasöründeki görselleri buraya referans verebilirsiniz)*
-- **Giriş Ekranı**: `tests/Login.png`
-- **Mekan Ekleme**: `tests/AddVenue.png`
-- **Yorumlar**: `tests/AddComment.png`
 
 
