@@ -1,76 +1,64 @@
+# Venues (MekanBul)
 
-## 📌 Genel Bakış (Overview)
+**Venues**, kullanıcıların konum tabanlı olarak mekanları keşfetmesini, yorum yapmasını ve mekan eklemesini sağlayan modern bir Full-Stack web uygulamasıdır.
+## 🔗 Canlı Demo
+- **Frontend**: [https://web-s7ma.vercel.app/](https://web-s7ma.vercel.app/)
+- **Backend API**: [https://web-gamma-orpin-77.vercel.app/](https://web-gamma-orpin-77.vercel.app/)
+## 🌟 Özellikler (Features)
+- **Mekan Keşfi**: Yakın çevredeki mekanları listeleme.
+- **Detaylı Bilgi**: Mekanların puanlarını, adreslerini ve imkanlarını görüntüleme.
+- **Kullanıcı Etkileşimi**: Yorum ve puan ekleme/silme/güncelleme.
+- **Yönetim**: Yeni mekan ekleme ve düzenleme.
+- **Güvenli Giriş**: JWT ve Passport.js tabanlı kullanıcı kimlik doğrulama (Register/Login).
 
-Venue API, konum tabanlı mekan keşfi, kullanıcı etkileşimi (yorumlar) ve güvenli kimlik doğrulama işlemleri için tasarlanmış modern bir backend çözümüdür. Bu servis sayesinde geliştiriciler, uygulamalarına hızlıca mekan listeleme, sosyal geri bildirim ve kullanıcı yönetim özellikleri entegre edebilirler.
+## 🛠️ Teknolojiler (Tech Stack)
 
-🔗 **Frontend Linki :** [https://web-s7ma.vercel.app/](https://web-s7ma.vercel.app/)
-🔗 **Backend Linki :** [https://web-gamma-orpin-77.vercel.app/](https://web-gamma-orpin-77.vercel.app/)
+### Frontend
+- **React**: Kullanıcı arayüzü kütüphanesi.
+- **Redux Toolkit**: Durum yönetimi (State management).
+- **Vite**: Hızlı geliştirme ve build aracı.
+- **Axios**: API istekleri için.
+- **React Router**: Sayfa yönlendirmeleri.
 
-## Kurulum 
+### Backend
+- **Node.js & Express**: Sunucu tarafı uygulama çatısı.
+- **MongoDB & Mongoose**: Veritabanı ve ORM.
+- **Passport.js & JWT**: Kimlik doğrulama.
 
-Geliştirme ortamınızı hazırlamak için aşağıdaki komutları sırasıyla terminalinizde çalıştırın.
+## 🚀 Kurulum (Installation)
 
-```sh
-# 1. Projeyi yerelinize çekin
-git clone <repository-url>
+Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin.
 
-# 2. Proje klasörüne geçiş yapın
-cd proje-klasoru
-
-# 3. Gerekli paketleri yükleyin
-npm install
-
-# 4. Çevresel değişkeleri (.env) ayarlayın
-# (Örnek: JWT_SECRET=gizliAnahtar, dbURI=mongodb+srv://...)
-
-# 5. Uygulamayı başlatın
-npm run start
+### 1. Projeyi Klonlayın
+```bash
+git clone https://github.com/Berk-Mutlu/Venues.git
+cd Venues
 ```
 
-## 📷 Fotoğraflar
+### 2. Backend Kurulumu
+```bash
+cd mekanbul-backend-main
+npm install
+```
+`.env` dosyanızı oluşturun ve gerekli değişkenleri ekleyin (DB URI, JWT Secret vb.).
+```bash
+npm run start
+```
+Sunucu varsayılan olarak `localhost:3000` (veya ayarladığınız portta) çalışacaktır.
 
-#### Register
+### 3. Frontend Kurulumu
+Yeni bir terminal açın ve frontend klasörüne gidin:
+```bash
+cd mekanbul-frontend-main
+npm install
+npm run dev
+```
+Uygulama `localhost:5173` adresinde çalışacaktır.
 
-![Register](tests/Register.png)
+## 📸 Ekran Görüntüleri
+*(Mevcut `tests` klasöründeki görselleri buraya referans verebilirsiniz)*
+- **Giriş Ekranı**: `tests/Login.png`
+- **Mekan Ekleme**: `tests/AddVenue.png`
+- **Yorumlar**: `tests/AddComment.png`
 
-#### Login
 
-![Login](tests/Login.png)
-
-#### AddVenue
-
-![Add Venue](tests/AddVenue.png)
-
-#### List Nearby Venues
-
-![List Nearby Venues](tests/ListNearbyVenues.png)
-
-#### Get Venue
-
-![Get Venue](tests/GetVenue.png)
-
-#### UpdateVenue
-
-![Update Venue](tests/UpdateVenue.png)
-
-#### Delete Venue
-
-![Delete Venue](tests/DeleteVenue.png)
-
-#### AddComment
-
-![Add Comment](tests/AddComment.png)
-
-#### GetComment
-
-![Get Comment](tests/GetComment.png)
-
-#### UpdateComment
-
-![Update Comment](tests/UpdateComment.png)
-
-#### DeleteComment
-
-![Delete Comment](tests/DeleteComment.png)
-
----
